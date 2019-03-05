@@ -1,0 +1,36 @@
+{
+  "name": "nl-restify-api",
+  "version": "1.0.0",
+  "description": "Restful API con Restify",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "engines": {
+    "node": "11.x.x",
+    "npm": "6.x.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lemanahuel/nl-restify-api.git"
+  },
+  "homepage": "https://nl-restify-api.herokuapp.com",
+  "author": {
+    "name": "Nahuel Lema",
+    "email": "lema.nahuel@gmail.com",
+    "url": "https://www.linkedin.com/in/nahuellema/"
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "async": "^2.6.2",
+    "bunyan": "^1.8.12",
+    "cloudinary": "^1.13.2",
+    "forever": "^0.15.3",
+    "glob": "^7.1.2",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.4.16",
+    "restify": "^8.0.0",
+    "restify-cors-middleware": "^1.1.1"
+  }
+}
