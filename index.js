@@ -61,11 +61,6 @@ glob('./modules/**/*.routes.js', {}, (err, files) => {
     require(path.resolve(file))(server);
     cb(null);
   }, err => {
-
-    // server.get('/docs', restify.plugins.serveStatic({
-    //   directory: './public',
-    //   default: 'index.html'
-    // }));
     let routes = [];
     _.mapValues(server.router._registry._routes, (value, key) => {
       routes.push({
@@ -73,6 +68,7 @@ glob('./modules/**/*.routes.js', {}, (err, files) => {
         method: value.method
       });
     });
+
     server.get('/docs', (req, res, next) => {
       res.render('./public/docs/docs.pug', {
         app: {
@@ -82,6 +78,11 @@ glob('./modules/**/*.routes.js', {}, (err, files) => {
         endpoints: routes
       });
     });
+
+    server.get('/statics', restify.plugins.serveStatic({
+      directory: './public',
+      default: 'index.html'
+    }));
 
     server.listen(config.PORT, () => {
       console.log('%s listening at %s', server.name, server.url);
