@@ -9,7 +9,7 @@ module.exports = class Sendgrid {
   static send(params) {
     return new Promise((resolve, reject) => {
       return sgMail.send({
-        from: 'NL-RESTIFY-API <lema.nahuel+koa-api@gmail.com>',
+        from: 'NL-RESTIFY-API <lema.nahuel+restify-api@gmail.com>',
         to: 'lema.nahuel@gmail.com',
         subject: `Notificacion de ${params.action} desde NL-RESTIFY-API`,
         html: `Se realizo la accion <strong>${params.action}</strong> en la tarea ${params.oldTask.title} ahora es <strong>${params.newTask.title}!</strong>`,
