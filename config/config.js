@@ -9,6 +9,8 @@ module.exports = {
     'localhost:5001',
     'https://nl-restify-api.herokuapp.com',
     'https://nl-static-www.herokuapp.com',
+    'http://nl-restify-api.herokuapp.com',
+    'http://nl-static-www.herokuapp.com',
     'nl-restify-api.herokuapp.com',
     'nl-static-www.herokuapp.com']
 };
