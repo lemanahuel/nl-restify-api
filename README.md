@@ -1,5 +1,5 @@
 ## 💻 RESTIFY + MONGODB, comenzá a programar hoy! 👊
-Desarrollaremos un CRUD completo con una API RestFul con NODE + RESTIFY para persistir todo en MONGODB con Mongoose.
+Desarrollaremos un CRUD completo con una API RestFul con NODE + RESTIFY para persistir todo en MONGODB con Mongoose y finalmente lo deployaremos en Heroku.
 
 ### Curso online en Udemy
 
