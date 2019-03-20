@@ -3,7 +3,7 @@ Desarrollaremos un CRUD completo con una API RestFul con NODE + RESTIFY para per
 
 ### Curso online en Udemy
 
-👉 https://www.udemy.com/restify-mongodb-node-api-rest-ful-heroku/
+👉 https://cutt.ly/curso-online-de-restify
 
 ### Más cursos:
 
